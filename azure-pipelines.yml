@@ -25,7 +25,7 @@ steps:
 - script: |
     echo Starting the build
     mvn package
-   displayName: 'Build with Maven'
+displayName: 'Build with Maven'
     
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
