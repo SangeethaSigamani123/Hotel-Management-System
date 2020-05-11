@@ -27,10 +27,4 @@ steps:
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     
- - task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: '93e81c9f-cc78-476c-ab0e-bd7f4df3eb42'
-    appType: 'webApp'
-    WebAppName: 'Web-app-dev-dep'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)/*.zip'
+ 
